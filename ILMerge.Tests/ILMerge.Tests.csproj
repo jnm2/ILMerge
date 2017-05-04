@@ -80,6 +80,10 @@
       <Project>{D7E16B38-3893-4EEF-847F-A3BE807E9546}</Project>
       <Name>System.Compiler</Name>
     </ProjectReference>
+    <ProjectReference Include="..\Test assemblies\CpsCsproj\CpsCsproj.csproj">
+      <Project>{7edb42da-aa87-4a7b-b055-32f3b315c58d}</Project>
+      <Name>CpsCsproj</Name>
+    </ProjectReference>
   </ItemGroup>
   <Choose>
     <When Condition="'$(VisualStudioVersion)' == '10.0' And '$(IsCodedUITest)' == 'True'">

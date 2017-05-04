@@ -6,6 +6,11 @@ namespace ILMerging.Tests
 {
     internal static class Extensions
     {
+        public static void SetUpInputAssemblyForTest(this ILMerge ilMerge, string inputAssemblyName)
+        {
+            SetUpInputAssemblyForTest(ilMerge, Assembly.Load(inputAssemblyName));
+        }
+
         public static void SetUpInputAssemblyForTest(this ILMerge ilMerge, Assembly inputAssembly)
         {
             ilMerge.SetSearchDirectories(ShadowCopyUtils.GetTransitiveClosureDirectories(inputAssembly).ToArray());
